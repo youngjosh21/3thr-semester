@@ -1,0 +1,35 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+package com.mycompany.mavenproject2;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author aluno.den
+ */
+public class Mavenproject2 {
+
+    public static void main(String[] args) {
+        //scanner
+
+        Scanner sc = new Scanner(System.in);
+
+//variaveis
+        int n1,n2;
+        System.out.println("Digite um numero");
+        n1 = sc.nextInt();
+        n2 = sc.nextInt();
+
+        //ação
+        if (n1 % n2 == 0 || n2 % n1 == 0)  {
+            System.out.println("são multiplos");
+
+        }else {
+            System.out.println("não são multiplos");
+        }
+
+        sc.close();
+    }
+}
