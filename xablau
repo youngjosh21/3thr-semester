@@ -1,0 +1,32 @@
+  /*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.mavenproject2;
+
+/**
+ *
+ * @author aluno.den
+ */
+public class Mavenproject2 {
+
+    public static void main(String[] args) {
+        int idade = 30;
+        float preco1 = 2100.00F;
+        float preco2 = 650.50F;
+        char sexo = 'f';
+        String codigo = "5290";
+        
+        System.out.printf("Produtos: %n Computador, o preço é: %.2f ",preco1);
+        System.out.printf("Mesa de escriótio, o preço é:  %.2f !%n",preco2);
+        System.out.printf("Registro: %d anos de idade, codigo %s e sexo %c %n",idade, codigo, sexo);
+        System.out.printf("Medida com oitos casas decimais: %n");
+        System.out.printf("Arredondamento(três casas decimais: %n");
+        System.out.printf("decimal usadonos EUA: %n");
+        
+        
+        
+        
+    }
+}
+
