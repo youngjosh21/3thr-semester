@@ -1,0 +1,35 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+package com.mycompany.mavenproject2;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author aluno.den
+ */
+public class Mavenproject2 {
+
+    public static void main(String[] args) {
+        //scanner
+
+        Scanner sc = new Scanner(System.in);
+
+//variaveis
+        int numero;
+        System.out.println("Digite um numero");
+        numero = sc.nextInt();
+
+        //ação
+        if (numero == 0 ) {
+            System.out.println("Numero digitado, é  nulo");
+        } else if (numero < 0) {
+            System.out.println("Numero digitado, é negativo");
+        } else {
+            System.out.println("Numero digitado é positivo");
+        }
+
+        sc.close();
+    }
+}
