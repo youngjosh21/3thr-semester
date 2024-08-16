@@ -1,0 +1,47 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+package com.mycompany.mavenproject2;
+import java.util.Scanner;
+
+/**
+ *
+ * @author aluno.den
+ */
+public class Mavenproject2 {
+//psvm - atalho
+//sout - atalho
+
+    public static void main(String[] args) {
+        //scanner
+        Scanner sc = new Scanner(System.in);
+
+        double renda;
+        double valorPagar=0;
+
+        System.out.println("Digite o valor da renda:");
+        renda = sc.nextFloat();
+        
+        if (renda < 0){
+            System.out.println("valor inserido invalido para calculo");
+        }
+        else if(renda <= 2000 && renda >= 0) 
+         {
+            System.out.println("Isento de imposto de renda");
+        }
+        else if  (renda <= 3000 && renda > 2000){
+            valorPagar = (renda - 2000) * 0.08;
+           }
+        else if  (renda <= 4500 && renda > 3000){
+            valorPagar = ((renda - 3000) * 0.18) + 80;
+           }
+        else {
+            valorPagar = ((renda - 4500) * 0.28) + 350;
+        }
+        
+        System.out.printf("Valor a pagar : R$ %.2f", valorPagar);
+        
+        sc.close();
+        
+    }
+}
