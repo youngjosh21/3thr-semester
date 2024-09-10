@@ -1,0 +1,19 @@
+package Conta;
+
+public class especial extends Conta {
+
+
+    private double limiteEmprestimo;
+    public especial(int numero, String titular, double depInicial) {
+        super(numero, titular, depInicial);
+        this.limiteEmprestimo = limiteEmprestimo;
+    }
+
+    public especial(int numero, String titular) {
+        super(numero, titular);
+    }
+  public void limite(double quantia)
+      saldo -= (quantia + 10)
+
+
+}
