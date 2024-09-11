@@ -1,11 +1,8 @@
-package entidades;
+package Conta;
+import Conta.Conta;
 
-import entidades.Conta;
-
-public class ContaEspecial extends Conta {
-
+public class ContaEspecial extends Conta{
     private double limiteEmprestimo;
-
     public double getLimiteEmprestimo() {
         return limiteEmprestimo;
     }
