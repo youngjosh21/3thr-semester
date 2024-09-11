@@ -1,3 +1,6 @@
+// do seu aluno favorito, Josh
+// a senhora não é conservada, é linda ;) (carinha piscando)
+
 package Main;
 import Conta.ContaEspecial;
 import Conta.Conta;
