@@ -1,69 +1,73 @@
 package Produto;
 
 public class Produto {
+// variavel
+    private String nome;
+    private double preco;
+    private int quantidade;
 
     @Override
     public String toString() {
-        return "Nome" + Nome + "Preco" + Preco + "Quantidade" + Quantidade + "Valor Total do estoque: R$ " + String.format("%.2f", TotalEstoque())
+        return "Nome.." + nome
+                + ", Preco:" + String.format("%.2f", preco)
+                + ", Quantidade de Estoque:" + quantidade
+                + ", Valor Total do estoque: R$ " + String.format("%.2f", totalEstoque())
                 ;
 
 
     }
+    // obj
 
-    private String Nome;
-    private double Preco;
-    private int Quantidade;
-    private double TotalEstoque;
+    public Produto(String Nome, double preco, int quantidade) {
+        this.nome = Nome;
+        this.preco = preco;
+        this.quantidade = quantidade;
+
+    }
 
     //    get é pra ver  e o set é pra ver e mudar
-    public void AddProdutos(int quantidade) {
-        TotalEstoque += quantidade;
-
-    }
-
-    public void RemoverProdutos(int quantidade) {
-        TotalEstoque -= quantidade;
-    }
-
-    public double TotalEstoque() {
-        return Quantidade * Preco;
-    }
 
     public String getNome() {
-        return Nome;
+        return nome;
     }
-
     public void setNome() {
-        this.Nome = Nome;
+        this.nome = nome;
     }
 
     public double getPreco() {
-        return Preco;
+        return preco;
     }
 
     public void setPreco() {
-        this.Preco = Preco;
+        this.preco = preco;
     }
 
     public int getQuantidade() {
-        return Quantidade;
+        return quantidade;
 
     }
 
     public void setQuantidade() {
-        this.Quantidade = Quantidade;
+        this.quantidade = quantidade;
 
     }
 
-    public Produto(String Nome, double preco, int quantidade) {
-        this.Nome = Nome;
-        this.Preco = Preco;
-        this.Quantidade = Quantidade;
-
-    }
-
+// função ou metódo, "void" sem retorno ,double return, tudo função
+public void AddProduto(int quantidade_) {
+    quantidade += quantidade_;
 
 }
 
+    public void RemoverProdutos(int quantidade_) {
+        quantidade -= quantidade_;
+    }
+
+    public double totalEstoque() {
+        return quantidade * preco;
+    }
+
+
+
+}
 
 
